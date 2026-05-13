@@ -95,6 +95,8 @@
 
  .nav a:hover{
     background: var(--primary);
+    box-shadow: 0 2px 10px rgba(58,134,255,0.4);
+    
  }
 
  .hero {
@@ -102,39 +104,46 @@
      display: grid;
      place-items: center;
      text-align: center;
-     padding: 6rem 1rem 4rem;
+     padding: 6rem 1rem;
+     color: #fff;
 
-     background-image: linear-gradient(rgba(11,19,43,0.9)), url(winterfest.jpg);
+     background-image:url(winterfest.jpg);
+     background-image:  linear-gradient(rgba(11,19,43,0.4)), rgba(11,19,43,0.6);
 
      background-size: cover;
-     background-position: centre;
+     background-position: center;
      background-repeat: no repeat;
      background-attachment: fixed;
  }
 
  .hero h1 {
      font-size: clamp(2rem, 4vw + 1rem, 4rem);
-     margin: 0 0 .5rem;
+     margin-bottom: 0.5rem;
+     text-shadow: 0 0 20px rgba(255,255,255,0.3);
  }
 
  .hero p {
      max-width: 60ch;
      margin: 0 auto 1.25rem;
+     opacity: 0.9;
  }
 
  .btn {
      display: inline-block;
-     padding: .8rem 1.1rem;
-     border-radius: .75rem;
+     padding: 0.9rem 1.4rem;
+     border-radius: 999px;
      font-weight: 600;
      background: var(--primary);
      color:#fff;
      transition: 0.3s;
+     box-shadow: 0 5px 20px rgba(58,134,255,0.4);
  }
 
  .btn:hover{
     background: var(--accent);
     color:#000;
+    transform: translateY(-2px);
+
  }
 
  .highlights {
@@ -152,11 +161,12 @@
      background: var(--secondary);
      border: 1px solid rgba(255,255,255,0.1);
      transition:0.3s;
+     
  }
 
  .card:hover{
     transform:translateY(-5px);
-    border-color: var(--accent);
+    border-color: var(--primary);
  }
 
  .card h3 {
