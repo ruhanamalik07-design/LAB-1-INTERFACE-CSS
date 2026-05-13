@@ -126,6 +126,14 @@
      padding: .8rem 1.1rem;
      border-radius: .75rem;
      font-weight: 600;
+     background: var(--primary);
+     color:#fff;
+     transition: 0.3s;
+ }
+
+ .btn:hover{
+    background: var(--accent);
+    color:#000;
  }
 
  .highlights {
@@ -140,10 +148,19 @@
  .card {
      padding: 1rem;
      border-radius: 1rem;
+     background: var(--secondary);
+     border: 1px solid rgba(255,255,255,0.1);
+     transition:0.3s;
+ }
+
+ .card:hover{
+    transform:translateY(-5px);
+    border-color: var(--accent);
  }
 
  .card h3 {
      margin-top: 0;
+     color: var(--accent);
  }
 
  footer {
