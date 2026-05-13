@@ -102,6 +102,13 @@
      place-items: center;
      text-align: center;
      padding: 6rem 1rem 4rem;
+
+     background-image: linear-gradient(rgba(11,19,43,0.9)), url(winterfest.jpg);
+
+     background-size: cover;
+     background-position: centre;
+     background-repeat: no repeat;
+     background-attachment: fixed;
  }
 
  .hero h1 {
